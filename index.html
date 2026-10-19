@@ -4,161 +4,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joseph Medina | Portafolio Profesional</title>
+    <title>Joseph Medina - Portafolio Profesional</title>
     <link rel="icon" href="src/img/icono.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
     <link rel="stylesheet" href="src/css/styles.css">
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <div class="nav-contenedor">
-            <span class="logo">JM.dev</span>
-            <ul class="nav-links">
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#habilidades">Stack Técnico</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#enlaces">Contacto</a></li>
+    <header class="header">
+        <div class="logo">
+            <span class="logo-bracket">&lt;</span>JM.dev<span class="logo-bracket">/&gt;</span>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#servicios" class="nav-link">Enfoque</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#portafolio" class="nav-link">Proyectos y Enlaces</a></li>
             </ul>
-        </div>
-    </nav>
-
-    <header class="hero" id="sobre-mi">
-        <div class="hero-contenido">
-            <div class="hero-texto">
-                <span class="etiqueta">Ingeniería de Software • ESPE</span>
-                <h1>Joseph Benjamín Medina Sánchez</h1>
-                <h2>Desarrollador de Software en Formación</h2>
-                <p>
-                    Tengo 20 años y curso el cuarto nivel de Ingeniería de Software en la Universidad de las Fuerzas Armadas ESPE. 
-                    Me apasiona el desarrollo de aplicaciones, la arquitectura de software y el aprendizaje continuo de nuevas 
-                    tecnologías para construir soluciones eficientes y escalables.
-                </p>
-            </div>
-            <div class="hero-imagen">
-                <img src="src/img/fotoPerfil.jpeg" alt="Joseph Medina" class="foto-perfil">
-            </div>
-        </div>
+        </nav>
     </header>
 
-    <main class="contenedor">
+    <section class="intro" id="inicio">
+        <h1 class="section-title section-title--intro">
+            Hola, soy <strong>Joseph Medina</strong>
+        </h1>
+        <p class="section-subtitle section-subtitle--intro">Estudiante de ingeniería de software</p>
+        <img src="src/img/fotoPerfil.jpeg" alt="Joseph Medina" class="intro-img">
+    </section>
 
-        <section class="grid-dos-columnas">
-            <article class="tarjeta">
-                <h3>Formación Académica</h3>
-                <p><strong>Carrera:</strong> Ingeniería de Software</p>
-                <p><strong>Institución:</strong> Universidad de las Fuerzas Armadas ESPE</p>
-                <p><strong>Nivel actual:</strong> Cuarto Semestre</p>
-            </article>
+    <section class="my-services" id="servicios">
+        <h2 class="section-title section-title--services">Áreas de Interés</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Desarrollo de Software</h3>
+                <p>Diseño y construcción de aplicaciones aplicando programación orientada a objetos, estructuras de datos eficientes y principios limpios de arquitectura.</p>
+            </div>
+            <div class="service">
+                <h3>Desarrollo Web & Backend</h3>
+                <p>Creación de interfaces modernas con HTML5, CSS3, TypeScript y Next.js, integradas con servicios backend en Node.js, Java y contenedores Docker.</p>
+            </div>
+            <div class="service">
+                <h3>Videojuegos & IA</h3>
+                <p>Exploración de lógica de videojuegos, consumo de APIs competitivas como Riot Games API, computación paralela y herramientas de inteligencia artificial.</p>
+            </div>
+        </div>
+        <a href="#portafolio" class="btn">Ver Proyectos y Enlaces</a>
+    </section>
 
-            <article class="tarjeta">
-                <h3>Áreas de Interés</h3>
-                <ul class="lista-limpia">
-                    <li>Desarrollo de Software y Arquitectura</li>
-                    <li>Desarrollo de Videojuegos</li>
-                    <li>Inteligencia Artificial</li>
-                    <li>Bases de Datos y Backend</li>
-                </ul>
-            </article>
-        </section>
+    <section class="about-me" id="sobre-mi">
+        <h2 class="section-title section-title--about">Quién soy</h2>
+        <p class="section-subtitle section-subtitle--about">Estudiante de 4.º Nivel en la ESPE • Quito</p>
+        <div class="about-me--body">
+            <p>Tengo 20 años y actualmente curso el cuarto semestre de la carrera de Ingeniería de Software en la Universidad de las Fuerzas Armadas ESPE. Me apasiona la tecnología y la resolución de problemas mediante código.</p>
+            <p>Me enfoco en aprender constantemente nuevas herramientas, lenguajes de programación y metodologías de despliegue como Docker y Git para construir software robusto.</p>
+        </div>
+        <img src="src/img/ESPE.png" alt="Universidad ESPE" class="about-me--img">
+    </section>
 
-        <section id="habilidades" class="seccion">
-            <h3 class="titulo-seccion">Stack Técnico</h3>
-            <div class="grid-dos-columnas">
-                <article class="tarjeta">
-                    <h4>Tecnologías de Desarrollo</h4>
-                    <ul class="lista-anidada">
-                        <li><strong>Frontend</strong>
+    <section class="skills-section" id="habilidades">
+        <div class="skills-container">
+            <h2 class="section-title section-title--skills">Stack Técnico y Formación</h2>
+            
+            <div class="skills-grid">
+                <div class="skills-box">
+                    <h3>Habilidades Clave</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%">
+                            <span><i class="fas fa-laptop-code"></i> Java / C++ (POO & Estructuras) - 85%</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" style="width: 80%">
+                            <span><i class="fas fa-globe"></i> HTML5 / CSS3 / JavaScript - 80%</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" style="width: 75%">
+                            <span><i class="fas fa-database"></i> Node.js / Next.js / TypeScript - 75%</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width: 70%">
+                            <span><i class="fab fa-docker"></i> Git / GitHub / Docker & Nginx - 70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-box">
+                    <h3>jerarquía de Tecnologías</h3>
+                    <ul class="nested-list">
+                        <li><strong>Frontend Web</strong>
                             <ul>
-                                <li>HTML5 y CSS3</li>
+                                <li>HTML5 Semántico y CSS3 Externo</li>
                                 <li>JavaScript y TypeScript</li>
                                 <li>Next.js</li>
                             </ul>
                         </li>
-                        <li><strong>Backend y Lenguajes</strong>
+                        <li><strong>Backend y Sistemas</strong>
                             <ul>
                                 <li>Java y C++</li>
                                 <li>Node.js y Python</li>
-                                <li>Git, GitHub y Docker</li>
+                                <li>Docker y Nginx</li>
                             </ul>
                         </li>
                     </ul>
-                </article>
-
-                <article class="tarjeta" id="proyectos">
-                    <h4>Proyectos Destacados</h4>
-                    <ol class="lista-ordenada">
-                        <li><strong>Finvory:</strong> Sistema de gestión de inventario desarrollado en Java aplicando POO.</li>
-                        <li><strong>LoL AI Analyzer:</strong> Aplicación web de análisis de partidas con Next.js y TypeScript.</li>
-                        <li><strong>Mythic Shop Tracker:</strong> Servicio en Node.js para seguimiento y sincronización de rotaciones.</li>
-                    </ol>
-                </article>
+                </div>
             </div>
-        </section>
 
-        <section class="seccion">
-            <h3 class="titulo-seccion">Formación Relevante</h3>
-            <div class="tarjeta tabla-contenedor">
-                <table class="tabla-materias">
+            <div class="table-wrapper">
+                <table class="tech-table">
                     <thead>
                         <tr>
-                            <th>Asignatura</th>
-                            <th>Nivel</th>
-                            <th>Enfoque Técnico</th>
+                            <th>Categoría / Nivel</th>
+                            <th>Asignaturas y Tecnologías Aplicadas</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Programación Orientada a Objetos</td>
-                            <td>Segundo</td>
-                            <td>Java, Polimorfismo y Patrones de Diseño</td>
+                            <th>Lenguajes Base</th>
+                            <td>
+                                <span class="tech-badge">C++</span>
+                                <span class="tech-badge">Java</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">TypeScript</span>
+                            </td>
                         </tr>
                         <tr>
-                            <td>Estructura de Datos</td>
-                            <td>Tercero</td>
-                            <td>C++, Listas Enlazadas y Algoritmos de Ordenamiento</td>
+                            <th>Desarrollo Web</th>
+                            <td>
+                                <span class="tech-badge">HTML5</span>
+                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">Next.js</span>
+                                <span class="tech-badge">Node.js</span>
+                            </td>
                         </tr>
                         <tr>
-                            <td>Programación Web</td>
-                            <td>Cuarto</td>
-                            <td>HTML5, CSS3, Arquitectura Web y Contenedores Docker</td>
-                        </tr>
-                        <tr>
-                            <td>Computación Paralela</td>
-                            <td>Cuarto</td>
-                            <td>Programación Concurrente, Hilos en C++ y MIMD</td>
+                            <th>Asignaturas Clave</th>
+                            <td>
+                                <span class="tech-badge">Programación Orientada a Objetos</span>
+                                <span class="tech-badge">Estructura de Datos</span>
+                                <span class="tech-badge">Programación Web</span>
+                                <span class="tech-badge">Computación Paralela</span>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="enlaces" class="seccion">
-            <h3 class="titulo-seccion">Enlaces de Interés</h3>
-            <div class="grid-enlaces">
-                <a href="https://github.com/Joseph-Benjamin-Medina-Sanchez" target="_blank" class="tarjeta-enlace">
-                    <img src="src/img/gitHub.jpg" alt="GitHub">
-                    <span>GitHub</span>
-                </a>
-                <a href="https://www.espe.edu.ec/" target="_blank" class="tarjeta-enlace">
-                    <img src="src/img/ESPE.png" alt="ESPE">
-                    <span>Universidad ESPE</span>
-                </a>
-                <a href="https://www.linkedin.com/" target="_blank" class="tarjeta-enlace">
-                    <img src="src/img/LinkedIn.png" alt="LinkedIn">
-                    <span>LinkedIn</span>
-                </a>
-                <a href="https://developer.riotgames.com" target="_blank" class="tarjeta-enlace">
-                    <img src="src/img/Riot.jpg" alt="Riot Games">
-                    <span>Riot Games Portal</span>
-                </a>
-            </div>
-        </section>
+    <section class="my-work" id="portafolio">
+        <h2 class="section-title section-title--work">Proyectos y Enlaces</h2>
+        <p class="section-subtitle section-subtitle--work">Mis repositorios, proyectos destacados y redes profesionales</p>
 
-    </main>
+        <ol class="projects-ordered">
+            <li><strong>Finvory:</strong> Sistema de gestión de inventario para autopartes en Java.</li>
+            <li><strong>LoL AI Analyzer:</strong> Plataforma de análisis de partidas con Next.js y TypeScript.</li>
+            <li><strong>Mythic Shop Tracker:</strong> Servicio en Node.js para seguimiento de rotaciones.</li>
+        </ol>
+
+        <div class="portfolio">
+            <a href="https://github.com/Joseph-Benjamin-Medina-Sanchez" target="_blank" class="portfolio-item">
+                <img src="src/img/gitHub.jpg" alt="GitHub" class="portfolio-img">
+                <div class="portfolio-text">
+                    <div class="portfolio-item-title">GitHub</div>
+                    <span class="portfolio-item-subtitle">Repositorios y Código Fuente</span>
+                </div>
+            </a>
+
+            <a href="https://www.espe.edu.ec/" target="_blank" class="portfolio-item">
+                <img src="src/img/ESPE.png" alt="ESPE" class="portfolio-img">
+                <div class="portfolio-text">
+                    <div class="portfolio-item-title">Universidad ESPE</div>
+                    <span class="portfolio-item-subtitle">Ingeniería de Software</span>
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" class="portfolio-item">
+                <img src="src/img/LinkedIn.png" alt="LinkedIn" class="portfolio-img">
+                <div class="portfolio-text">
+                    <div class="portfolio-item-title">LinkedIn</div>
+                    <span class="portfolio-item-subtitle">Perfil y Red Profesional</span>
+                </div>
+            </a>
+
+            <a href="https://developer.riotgames.com" target="_blank" class="portfolio-item">
+                <img src="src/img/Riot.jpg" alt="Riot Games" class="portfolio-img">
+                <div class="portfolio-text">
+                    <div class="portfolio-item-title">Riot Games API</div>
+                    <span class="portfolio-item-subtitle">Proyectos de Gaming & Datos</span>
+                </div>
+            </a>
+        </div>
+    </section>
 
     <footer class="footer">
-        <p>© 2026 Joseph Benjamín Medina Sánchez • Ingeniería de Software - ESPE</p>
+        <a href="#inicio" class="footer-logo">
+            <span class="name">Joseph</span>
+            <span class="lastname">Medina</span>
+        </a>
+        <p class="footer-copy">Ingeniería de Software - ESPE • Desplegado con Docker & Nginx</p>
+        <ul class="social-list">
+            <li class="social-list-item">
+                <a class="social-list-link" href="https://github.com/Joseph-Benjamin-Medina-Sanchez" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list-item">
+                <a class="social-list-link" href="https://www.linkedin.com/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list-item">
+                <a class="social-list-link" href="https://www.espe.edu.ec/" target="_blank">
+                    <i class="fas fa-university"></i>
+                </a>
+            </li>
+        </ul>
     </footer>
 
 </body>
